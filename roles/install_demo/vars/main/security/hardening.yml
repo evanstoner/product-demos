@@ -45,6 +45,13 @@ hardening:
         choices:
           - 'Yes'
           - 'No'
+      - question_name: DISA STIG?
+        type: multiplechoice
+        variable: harden_stig
+        required: false
+        choices:
+          - 'Yes'
+          - 'No'
   project:
     name: "Ansible official demo project"
     description: "prescriptive demos from Red Hat Management Business Unit"

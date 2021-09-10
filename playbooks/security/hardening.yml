@@ -7,6 +7,7 @@
     - harden_time: false
     - harden_ssh: false
     - harden_pci: false
+    - harden_stig: false
 
   tasks:
     - name: Configure Firewall
@@ -29,3 +30,8 @@
       when: harden_pci | bool
       include_role:
         name: redhatofficial.rhel8_pci_dss
+
+    - name: Apply RHEL8 STIG
+      when: harden_stig | bool
+      include_role:
+        name: redhatofficial.rhel8_stig

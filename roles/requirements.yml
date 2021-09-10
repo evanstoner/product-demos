@@ -1,6 +1,7 @@
 ---
 - src: dev-sec.ssh-hardening
 - src: redhatofficial.rhel8_pci_dss
+- src: redhatofficial.rhel8_stig
 - src: linux-system-roles.firewall
 - src: linux-system-roles.timesync
 - src: RedHatInsights.insights-client
