@@ -42,7 +42,7 @@
         - proto: all
           group_name: ansible
         - proto: all
-          cidr_ip: "{{ lookup('pipe', 'curl icanhazip.com') | trim }}"
+          cidr_ip: "{{ lookup('pipe', 'curl icanhazip.com') | trim }}/32"
       rules_egress:
         - proto: all
           cidr_ip: 0.0.0.0/0
