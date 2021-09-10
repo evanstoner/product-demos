@@ -1,6 +1,6 @@
 ---
-- name: build openscap report for rhel7
-  hosts: web
+- name: build openscap report for rhel
+  hosts: "{{ HOSTS | default('all') }}"
   gather_facts: false
 
   vars:
